@@ -1,0 +1,12 @@
+Package: git_phd
+Title: Example test for R
+Version: 0.0.0.1
+Authors@R: 
+    person("First", "Last", , "first.last@example.com", role = c("aut", "cre"),
+           comment = c(ORCID = "YOUR-ORCID-ID"))
+Description: Example test for R.
+License: `use_mit_license()`
+Encoding: UTF-8
+Imports:
+    dplyer
+    assertr
