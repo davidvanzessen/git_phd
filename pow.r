@@ -11,4 +11,4 @@ tests["y"] = lapply(tests["x"], pow)
 print(tests)
 
 tests %>% 
-    assert(in_set(1,4,9,16,25,36,49,64,81,99), y)
+    assert(in_set(1,4,9,16,25,36,49,64,81,100), y)
