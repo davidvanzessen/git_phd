@@ -11,7 +11,7 @@ jobs:
         uses: conda-incubator/setup-miniconda@v2
         with:
           activate-environment: git_phd
-          channels: conda-forge
+          channels: conda-forge,bioconda,default
           mamba-version: "*"
           environment-file: requirements.yml
           auto-activate-base: false
