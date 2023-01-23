@@ -1,0 +1,12 @@
+name: git_phd
+channels:
+- conda-forge
+- bioconda
+dependencies:
+- r-base
+- r-assertr
+- r-languageserver
+- r-dplyr
+- python=3.10
+- pip:
+  - -r requirements.txt
