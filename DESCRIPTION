@@ -7,6 +7,3 @@ Authors@R:
 Description: Example test for R.
 License: `use_mit_license()`
 Encoding: UTF-8
-Imports:
-    dplyer
-    assertr
