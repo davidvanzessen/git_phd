@@ -10,10 +10,9 @@ jobs:
       - name: Set up R
         uses: conda-incubator/setup-miniconda@v2
         with:
-          miniconda-version: "latest"
+          activate-environment: git_phd
           mamba-version: "*"
           environment-file: requirements.yml
-          activate-environment: git_phd
           auto-activate-base: false
       - name: run tests
         run: |
