@@ -7,16 +7,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - name: Set up R
-        uses: conda-incubator/setup-miniconda@v2
+      - uses: r-lib/actions/setup-r@v2
+      - uses: r-lib/actions/setup-r-dependencies@v2
         with:
-          activate-environment: git_phd
-          channels: conda-forge,bioconda,default
-          mamba-version: "*"
-          environment-file: requirements.yml
-          auto-activate-base: false
+          cache-version: 2
+          extra-packages: |
+            any::dplyr
+            any::assertr
       - name: run tests
         run: |
-          conda activate git_phd
           Rscript pow.r
       
